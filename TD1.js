@@ -24,3 +24,15 @@ const TVA = 0.2;
 const montantTTC = montantHT * (1+TVA);
 
 document.getElementById("resultat4").textContent = "le montant après taxe de 10euros et de " + montantTTC + "euros";
+
+//exercice 5
+const resultat = ((4 >= 6) || ("herbe" != "verte")) && !(((12 * 2) == 144) && true);
+
+document.getElementById("resultat5").textContent = "Le résultat de l'expression est : " + resultat;
+
+//exercice 6
+const poids = 50;
+const taille = 1.75;
+const IMC = poids/(taille*taille);
+
+document.getElementById("resultat6").textContent = "la personne à un IMC de " + IMC.toFixed(2);
