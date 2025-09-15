@@ -36,3 +36,25 @@ const taille = 1.75;
 const IMC = poids/(taille*taille);
 
 document.getElementById("resultat6").textContent = "la personne à un IMC de " + IMC.toFixed(2);
+
+// Exercice 7 : Livraison gratuite ou non
+const montantMinimum = 50;
+let montantCommande = 42;
+
+let messageLivraison;
+
+if (montantCommande >= montantMinimum) {
+  messageLivraison = "Livraison gratuite !";
+} else {
+  let fraisLivraison = 5;
+  messageLivraison = "Frais de livraison : " + fraisLivraison + " euros";
+}
+
+document.getElementById("resultat7").textContent = messageLivraison;
+
+// Exercice 8 : Conversion d'un binaire en décimal
+let binaire = "1101";
+let decimal = parseInt(binaire, 2);
+
+document.getElementById("resultat8").textContent =
+  "Binaire : " + binaire + " = Décimal : " + decimal;
